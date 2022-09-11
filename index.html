@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="/script.js"></script>
+    <script src="/script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -13,28 +13,45 @@
     </header>
     <main>
         <div class="container">
-            <div class="computer-count">
-                computer = 1
-            </div>
+            
             <div class="board-game">
-                <div class="computer-choices">
+                <div class="computer choices">
                     <button>✌️</button>
                     <button>✋</button>
                     <button>✊</button>
                 </div>
                 <div class="checking">
-                    <button>✊</button>
-                    <button>✌️</button>
+                    <div class="computer-count">
+                        <p class="count" id="computerCount">0</p>
+                        <p class="scored">computer</p>
+                    </div>
+                    <button id="displayComputer"></button>
+                    <button id="displayPlayer"></button>
+                    <div class="player-count">
+                        <p class="count" id="playerCount">0</p>
+                        <p class="scored">player</p>
+                    </div>
                 </div>
-                <div class="player-choices">
-                    <button>✌️</button>
-                    <button>✋</button>
-                    <button>✊</button>
+                <div class="player choices">
+                    <button 
+                    class="choice"
+                    value="scissor"
+                    >✌️</button>
+                    <button 
+                    class="choice"
+                    value="paper"
+                    >✋</button>
+                    <button 
+                    class="choice"
+                    value="rock"
+                    >✊</button>
                 </div>
             </div>
-            <div class="player-count">
-                player = 2
-            </div>
+            
+        </div>
+        <div class="finalScore-container">
+            <p class="winner" id="winner">Computer won !</p>
+            <button class="replay" id="replay">replay ?</button>
         </div>
     </main>
     <footer>

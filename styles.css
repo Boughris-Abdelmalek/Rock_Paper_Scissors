@@ -33,6 +33,64 @@ main {
     width: 100%;
 }
 
+.board-game {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 50vh;
+    background-color: #F2668B;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.checking {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.computer-count,
+.player-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 5em;
+}
+
+button {
+    font-size: 3em;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.finalScore-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.replay {
+    font-size: 1.25em;
+    padding: .25em 1em;
+}
+
+.winner {
+    font-size: 4em;
+}
+
 footer {
     position: fixed;
     bottom: 0;
