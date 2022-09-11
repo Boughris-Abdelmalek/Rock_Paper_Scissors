@@ -1,0 +1,43 @@
+body {
+    background: #011F26;
+    height: 100vh;
+    margin: 0;
+    color: white;
+    position: relative;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-image: url('https://aguirre.github.io/RPS-Multiplayer/assets/images/rps.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #026873;
+    text-align: center;
+    height: 5em;
+    width: 100%;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #026873;
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+}
