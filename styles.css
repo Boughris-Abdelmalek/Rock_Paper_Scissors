@@ -39,7 +39,7 @@ main {
     align-items: center;
     flex-direction: column;
     width: 50vw;
-    height: 50vh;
+    height: 60vh;
     background-color: #F2668B;
     padding: 2em;
     border-radius: 10px;
@@ -98,4 +98,11 @@ footer {
     width: 100%;
     padding: 2em;
     text-align: center;
+}
+
+@media (max-width: 767px) {
+    .checking {
+        flex-direction: column;
+        gap: .25rem;
+    }
 }
